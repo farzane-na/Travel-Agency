@@ -781,13 +781,13 @@ a {
 
 @media(min-width:220px) {
     .container {
-        width: 65%;
+        width: 60%;
     }
 }
 
 @media(min-width:360px) {
     .container {
-        width: 35rem;
+        width: 80%;
     }
 
     .support__mobile {
@@ -1144,7 +1144,8 @@ a {
         width: 61rem;
         height: 33rem;
     }
-    .head-mason{
+
+    .head-mason {
         top: -14%;
         right: 35.7%;
     }
@@ -1265,14 +1266,26 @@ a {
 
     .head-mason {
         width: 10rem;
-        top: 16%;
-        right: 38.55%;
+        top: 17%;
+        right: 40.55%;
     }
 
     .head-plants {
-        width: 10rem;
-        right: 18%;
-        top: -28%;
+        width: 8rem;
+        right: 11%;
+        top: -22%;
+    }
+    .main__app-image{
+        top: 26%;
+        right: 64%;
+    }
+    .footer__logos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 110%;
+    }
+    .footer__contact-mobile{
+        margin-top: 93%;
     }
 }
 
