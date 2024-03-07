@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <title>گودگشت</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__item d-flex">
+                <div class="header__menu">
+                    <ul class="header__menu-items d-flex">
+                        <li class="header__menu-item"><a class="item" href="#">خانه</a></li>
+                        <li class="header__menu-item"><a class="item" href="#">گردشگری</a></li>
+                        <li class="header__menu-item"><a class="item" href="#">تور</a></li>
+                        <li class="header__menu-item"><a class="item" id="stay" href="#">اقامت</a></li>
+                        <li class="header__menu-item"><a class="item" href="#">صرافی</a></li>
+                        <li class="header__menu-item"><a class="item" href="#">تحصیلی</a></li>
+                    </ul>
+                </div>
+                <div class="header__mobile-icon">
+                    <img src="./images/hamburger-menu.png" alt="">
+                    <img src="./images/0-img/logo-h.png" alt="">
+                </div>
+                <!-- header item for mobile mode  -->
+                <div class="header__menu-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="close-mobile-menu">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                    <ul>
+                        <li class="header__menu-item-mobile"><a class="item-mobile" href="#">خانه</a></li>
+                        <li class="header__menu-item-mobile"><a class="item-mobile" href="#">گردشگری</a></li>
+                        <li class="header__menu-item-mobile"><a class="item-mobile" href="#">تور</a></li>
+                        <li class="header__menu-item-mobile"><a class="item-mobile" href="#">اقامت</a></li>
+                        <li class="header__menu-item-mobile"><a class="item-mobile" href="#">صرافی</a></li>
+                        <li class="header__menu-item-mobile"><a class="item-mobile" href="#">تحصیلی</a></li>
+                    </ul>
+                </div>
+                <div class="header__logo">
+                    <img src="./images/0-img/logo-h.png" alt="#">
+                </div>
+                <div class="header__login d-flex">
+                    <a href="#" class="support__mobile"><img src="./images/question-mark.png" alt=""></a>
+                    <a class="header__support d-flex" href="#">
+                        <span class="support-icon">
+                            <img src="./images/icons/Ellipse 1.png" alt="" class="ellipse">
+                            <img src="./images/icons/Layer 2.png" alt="" class="layer">
+                        </span>
+                        <span>پشتیبانی آنلاین</span>
+                    </a>
+                    <a class="header__singup d-flex" href="#">
+                        <span>
+                            <img src="./images/icons/login-svgrepo-com.png" alt="" class="login">
+                        </span>
+                        <span>ورود / ثبت نام</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__inputs d-flex">
+                <div class="origin-destination-box d-flex">
+                    <input type="text" placeholder="مبدا" class="origin-box">
+                    <button class="change-button"><img src="./images/chang-btn.png"></button>
+                    <input type="text" placeholder="مقصد" class="destination-box">
+                </div>
+                <div class="return-date ">
+                    <input type="text" placeholder="تاریخ رفت" class="go-date">
+                    <span class="date-buttom"><img src="./images/datebtn.png"></span>
+                    <input type="text" placeholder="تاریخ برگشت" class="back-date">
+                </div>
+                <div class="number-passanger d-flex">
+                    <span class="number-passanger-title">تعداد مسافران</span>
+                    <span class="plus"><img src="./images/plus.png" alt="plus"></span>
+                    <span class="number">0</span>
+                    <span class="minus"><img src="./images/minus.png" alt="minus"></span>
+                </div>
+                <div class="option-way-box d-flex">
+                    <span class="way-option">یک طرفه</span>
+                    <span class="option-way-icon"><img src="./images/way-option.png" alt="way option"></span>
+                    <div class="way-options">
+                        <ul>
+                            <li class="one-way">یک طرفه</li>
+                            <li class="two-way">دو طرفه</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="search">جستجو</button>
+            </div>
+
+            <div class="header__option">
+                <div class="header__option-buttom first d-flex">
+                    <img src="./images/hotel.png" alt="hotel" class="image-option">
+                    <span class="header__option-title">هتل</span>
+                </div>
+                <div class="header__option-buttom second d-flex">
+                    <img src="./images/consert.png" alt="consert" class="image-option">
+                    <span class="header__option-title">کنسرت</span>
+                </div>
+                <div class="header__option-buttom third d-flex">
+                    <img src="./images/stay.png" alt="stay" class="image-option">
+                    <span class="header__option-title">اقامت</span>
+                </div>
+                <div class="header__option-buttom forth d-flex">
+                    <img src="./images/tour.png" alt="tour" class="image-option">
+                    <span class="header__option-title">تور</span>
+                </div>
+                <div class="header__option-buttom fifth d-flex">
+                    <img src="./images/tour.png" alt="tour" class="image-option">
+                    <span class="header__option-title">تور</span>
+                </div>
+                <div class="header__option-buttom sixth d-flex">
+                    <img src="./images/stay.png" alt="stay" class="image-option">
+                    <span class="header__option-title">اقامت</span>
+                </div>
+                <div class="header__option-buttom seventh d-flex">
+                    <img src="./images/consert.png" alt="consert" class="image-option">
+                    <span class="header__option-title">کنسرت</span>
+                </div>
+                <div class="header__option-buttom eighth d-flex">
+                    <img src="./images/hotel.png" alt="hotel" class="image-option">
+                    <span class="header__option-title">هتل</span>
+                </div>
+            </div>
+            <!-- use of swiper for mobile -->
+            <div class="header__option-mobile">
+                <div #swiperRef="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-first d-flex">
+                                <img src="./images/hotel.png" alt="hotel" class="image-option">
+                                <span class="header__option-title">هتل</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-second d-flex">
+                                <img src="./images/consert.png" alt="consert" class="image-option">
+                                <span class="header__option-title">کنسرت</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-third d-flex">
+                                <img src="./images/stay.png" alt="stay" class="image-option">
+                                <span class="header__option-title">اقامت</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-forth d-flex">
+                                <img src="./images/tour.png" alt="tour" class="image-option">
+                                <span class="header__option-title">تور</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-fifth d-flex">
+                                <img src="./images/tour.png" alt="tour" class="image-option">
+                                <span class="header__option-title">تور</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-sixth d-flex">
+                                <img src="./images/stay.png" alt="stay" class="image-option">
+                                <span class="header__option-title">اقامت</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-seventh d-flex">
+                                <img src="./images/consert.png" alt="consert" class="image-option">
+                                <span class="header__option-title">کنسرت</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="header__option-buttom mobile-eighth d-flex">
+                                <img src="./images/hotel.png" alt="hotel" class="image-option">
+                                <span class="header__option-title">هتل</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <img src="./images/shape/1x/Shape 11.png" alt="" class="services__shape">
+        <div class="container">
+            <div class="main__services d-flex">
+                <div class="main__services-img">
+                    <img src="./images/mason.png" alt="mason" class="mason">
+                    <img src="./images/head-mason.png" alt="mason" class="head-mason">
+                </div>
+                <div class="main__services-text">
+                    <h2 class="services__title">خدمات گردشگردی</h2>
+                    <p class="services__text">برای انجام هرکاری به اطلاعات و آگاهی در مورد آن نیاز است. به همین دلیل
+                        باید آگاهی لازم را در مورد خدمات گردشگری و گردشگری بدانید، این آگاهی ها باعث می شود که سفری
+                        راحت، آسوده و پر لذتی را تجربه کنید.برای اینکه بتوانیدتصمیمات درست و مناسبی را بگیرید، از طریق
+                        راهنمایی گرفتن از افراد فعال در این زمینه و شرکت های گردشگری کمک بگیرید.</p>
+                    <div class="services__detail d-flex">
+
+                        <a href="#" class="services__more-detail">توضیحات بیشتر</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="services__detail-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="main__app">
+            <div class="container">
+                <div class="main__application d-flex">
+                    <div class="main__app-explain">
+                        <div class="main__app-title">اپلیکیشن گودگشت</div>
+                        <div class="main__app-text">توضیحات اپلیکیشن توضیحات اپلیکیشن توضیحات اپلیکیشن توضیحات اپلیکیشن
+                            توضیحات اپلیکیشن توضیحات اپلیکیشن</div>
+                    </div>
+                    <div class="main__app-image">
+                        <img src="./images/app.png" alt="application">
+                    </div>
+                    <div class="main__app-feature">
+                        <p>- ویژگی های اپلیکیشن گودگشت</p>
+                        <p>- ویژگی های اپلیکیشن گودگشت</p>
+                        <div class="detail-app d-flex">
+                            <span><img src="./images/system.png" alt=""></span>
+                            <span>نسخه اندروید، ios و ویندوز </span>
+                        </div>
+                        <div class="left-detail d-flex">
+                            <button>اطلاعات بیشتر و دانلود
+                                <span><img src="./images/download.png" alt=""></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bankroll">
+            <img src="./images/shape/1x/Asset 1.png" alt="" class="bankroll__shape">
+            <div class="container">
+                <div class="bankroll__content d-flex">
+                    <div class="bankroll__detail">
+                        <div class="bankroll__detail-title">سرمایه گذاری</div>
+                        <div class="bankroll__detail-text">با توجه به قیمت مسکن و هزینه های ساخت و ساز آن، خرید مسکن به
+                            سرمایه زیادی نیاز دارد. علاوه بر این، زمین و مسکن قابلیت نقدشوندگی پایینی دارد و بازار شفافی
+                            برای خرید و فروش آن ها وجود ندارد. مواردی مانند هزینه های نگهداری و تعمیرات، رشد ناهمگون
+                            قیمت مسکن و زمین شهرها و مناطق مختلف، سیاست های کلان مانند میزان پرداخت وام و پروژه های
+                            عمرانی بزرگ مانند مسکن مهر و مسکن ملی نیز از جمله پارامتر ها و ریسک های تاثیرگذاری ایت که
+                            باید مورد توجه سرمایه گذاران این حوزه قرار گیرد.</div>
+                        <div class="services__more-detail d-flex">
+                            <a href="#" class="services__more-detail">توضیحات بیشتر</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="services__detail-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="bankroll__image">
+                        <img src="./images/head-plants.png" alt="plants" class="head-plants">
+                        <img src="./images/plants.png" alt="plants" class="planet">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="breadcrumbs d-flex">
+                <div class="breadcrums__hints d-flex">
+                    <div class="breadcrumbs__hint-icon1 d-flex"><img src="./images/hint1.png" alt="hint"></div>
+                    <div class="breadcrums__hint-title">راهنمای سفر</div>
+                    <div class="breadcrums__hint-text">راهنمای خرید و استرداد، قوانین و پرسش ها</div>
+                </div>
+                <div class="breadcrums__hints d-flex">
+                    <div class="breadcrumbs__hint-icon2 d-flex"><img src="./images/hint2.png" alt="hint"></div>
+                    <div class="breadcrums__hint-title">راهنمای سفر</div>
+                    <div class="breadcrums__hint-text">راهنمای خرید و استرداد، قوانین و پرسش ها</div>
+                </div>
+                <div class="breadcrums__hints d-flex">
+                    <div class="breadcrumbs__hint-icon3 d-flex"><img src="./images/hint3.png" alt="hint"></div>
+                    <div class="breadcrums__hint-title">راهنمای سفر</div>
+                    <div class="breadcrums__hint-text">راهنمای خرید و استرداد، قوانین و پرسش ها</div>
+                </div>
+            </section>
+            <!-- breadcrumbs for mobile mode -->
+            <div class="container">
+                <div class="breadcrumbs-mobile">
+                    <div class="breadcrumbs__hint-mobile-icon1 d-flex"><img src="./images/hint1.png" alt="hint"></div>
+                    <div class="breadcrumbs__detail-mobile">
+                        <div class="breadcrums__hint-title">راهنمای سفر</div>
+                        <div class="breadcrums__hint-text">راهنمای خرید و استرداد، قوانین و پرسش ها</div>
+                    </div>
+                </div>
+                <div class="breadcrumbs-mobile hint2-mobile">
+                    <div class="breadcrumbs__hint-mobile-icon2 d-flex"><img src="./images/hint2.png" alt="hint"></div>
+                    <div class="breadcrumbs__detail-mobile">
+                        <div class="breadcrums__hint-title">راهنمای سفر</div>
+                        <div class="breadcrums__hint-text">راهنمای خرید و استرداد، قوانین و پرسش ها</div>
+                    </div>
+                </div>
+                <div class="breadcrumbs-mobile hint3-mobile">
+                    <div class="breadcrumbs__hint-mobile-icon3 d-flex"><img src="./images/hint3.png" alt="hint"></div>
+                    <div class="breadcrumbs__detail-mobile">
+                        <div class="breadcrums__hint-title">راهنمای سفر</div>
+                        <div class="breadcrums__hint-text">راهنمای خرید و استرداد، قوانین و پرسش ها</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="question__title">سوالات شما</h2>
+        <section class="question">
+            <div class="container">
+                <div class="question__content d-flex">
+                    <div class="question__questions d-flex">
+                        <div class="question__text d-flex">
+                            <span class="question-mark d-flex">?</span>
+                            <p class="sentence">
+                                بلیط چه کشور هایی را می توانیم بخریم؟
+                            </p>
+                        </div>
+                        <div class="question__text d-flex">
+                            <span class="question-mark d-flex">?</span>
+                            <p class="sentence">
+                                بلیط چه کشور هایی را می توانیم بخریم؟
+                            </p>
+                        </div>
+                        <div class="question__text d-flex">
+                            <span class="question-mark d-flex">?</span>
+                            <p class="sentence">
+                                بلیط چه کشور هایی را می توانیم بخریم؟
+                            </p>
+                        </div>
+                        <div class="question__text d-flex">
+                            <span class="question-mark d-flex">?</span>
+                            <p class="sentence">
+                                بلیط چه کشور هایی را می توانیم بخریم؟
+                            </p>
+                        </div>
+                        <div class="question__text d-flex">
+                            <span class="question-mark d-flex">?</span>
+                            <p class="sentence">
+                                بلیط چه کشور هایی را می توانیم بخریم؟
+                            </p>
+                        </div>
+                        <div class="question__text d-flex">
+                            <span class="question-mark d-flex">?</span>
+                            <a class="sentence">
+                                بلیط چه کشور هایی را می توانیم بخریم؟
+                            </a>
+                        </div>
+                    </div>
+                    <div class="question__answer">
+                        <div class="answer-title">جواب</div>
+                        <div class="answer-text">پرواز های ایرلاین هایی مثل لوفت هانزا، امارات، قطرایرویز، ترکیش ایر،
+                            ایرفرانس، کی ال ام، آئروفلوت، آلیتالیا، اوکراینی، ایرایژیا، پگاسوس و ده ها ایرلاین دیگر قابل
+                            تهیه هستند.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="./images/0-img/world.png" alt="world" class="footer_world">
+            <div class="footer__logo">
+                <img src="./images/0-img/logo-h.PNG" alt="logo">
+            </div>
+            <div class="footer__contact d-flex">
+                <div class="footer__phone-number d-flex">
+                    <span class="footer__phone-number-icon"><img src="./images/phone-icon.png" alt=""></span>
+                    <span class="phone-number-title">شماره تماس : </span>
+                    <span class="phone-number">09031234567</span>
+                </div>
+                <div class="footer__addres d-flex">
+                    <span class="footer__addres-icon"><img src="./images/addres-icon.png" alt=""></span>
+                    <span class="addres-title">آدرس : </span>
+                    <span class="addres">استان-شهر-خیابان اصلی-خیابان فرعی</span>
+                </div>
+            </div>
+
+            <div class="footer__items d-flex">
+                <div class="footer__links">
+                    <span class="footer__link-title">دسترسی سریع</span>
+                    <div class="main-box-links">
+
+                        <ul class="box">
+                            <li class="footer_link-item"><a href="#" class="box-item">خدمات گردشگری</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">تور های یک روزه</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">اجاره سوئیت</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">اقامت</a></li>
+                        </ul>
+                        <ul class="box">
+                            <li class="footer_link-item"><a href="#" class="box-item">صرافی</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">سرمایه گذاری</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">تحصیلی</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">فروش بلیط کنسرت</a></li>
+                        </ul>
+                        <ul class="box">
+                            <li class="footer_link-item"><a href="#" class="box-item">لیدر و ترجمه</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">رزرو هتل</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">اجاره خودرو</a></li>
+                            <li class="footer_link-item"><a href="#" class="box-item">شاپینگ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__logos d-flex">
+                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/aira-682b7c43.png" alt="aira">
+                    </div>
+                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/ecunion-8b792f56.png" alt="ecunion">
+                    </div>
+                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/passenger-rights-dd64d114.svg"
+                            alt="passanger"></div>
+                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/samandehi-6e2b448a.png" alt="samandehi">
+                    </div>
+                    <div class="footer__logo-icon d-flex" id=""><img
+                            src="./images/0-img/logos/state-airline-f45c55b2.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="footer__contact-mobile d-flex">
+                <div class="footer__phone-number-mobile d-flex">
+                    <span class="footer__phone-number-mobile-icon"><img src="./images/phone-icon.png" alt="phone"></span>
+                    <span class="phone-number-title">شماره تماس : </span>
+                    <span class="phone-number">09031234567</span>
+                </div>
+                <div class="footer__addres-mobile d-flex">
+                    <span class="footer__addres-icon"><img src="./images/addres-icon.png" alt="addres"></span>
+                    <span class="addres-title">آدرس : </span>
+                    <span class="addres">استان-شهر-خیابان اصلی-خیابان فرعی</span>
+                </div>
+            </div>
+
+            <section class="footer__end d-flex">
+                <div class="footer__copy-write">تمامی حقوق مادی و معنوی این وبسایت به آژانس مسافرتی <span>گودگشت
+                    </span>تعلق دارد.</div>
+                <div class="footer__social-media d-flex">
+                    <a href="#"><img src="./images/telegram.png" alt="telegram"></a>
+                    <a href="#"><img src="./images/twiter.png" alt="twiter"></a>
+                    <a href="#"><img src="./images/linkdin.png" alt="linkdin"></a>
+                    <a href="#"><img src="./images/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="./images/youtube.png" alt="youtube"></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
