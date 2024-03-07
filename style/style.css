@@ -48,7 +48,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 1rem;
 }
 
 /*Header menu*/
@@ -60,7 +59,8 @@ a {
 .support__mobile,
 .header__option-mobile,
 .breadcrumbs-mobile,
-.footer__contact-mobile {
+.footer__contact-mobile,
+.left-detail-mobile {
     display: none;
 }
 
@@ -997,6 +997,21 @@ a {
     .main__app {
         background-position: right;
     }
+    .left-detail-mobile{
+        display: block;
+    }
+    .left-detail-mobile-btn{
+        margin-top: 5%;
+        background-color: #fff;
+        color: #30d086;
+        font-family: "yekan";
+        font-size: 2rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 2% 4%;
+        border-radius: 2rem;
+    }
 
     .main__app-image {
         right: 52%;
@@ -1226,7 +1241,15 @@ a {
     .answer-text {
         font-size: 2rem;
     }
-
+    .main__app-explain{
+        width: 70%;
+    }
+    .main__app-title{
+        font-size: 2rem;
+    }
+    .main__app-text{
+        font-size: 1.7rem;
+    }
     .main__app-image {
         top: 28%;
         right: 69%;
@@ -1313,6 +1336,10 @@ a {
     .main__app-image {
         display: none;
     }
+    .main__app-explain{
+        width: 150%;
+        margin: 2% 0;
+    }
 
     .main__app-text {
         font-size: 2rem;
@@ -1372,7 +1399,7 @@ a {
 
     .footer__logos {
         flex-wrap: wrap;
-        width: 127%;
+        width: 160%;
     }
 
     .footer__logo-icon {
@@ -1381,11 +1408,11 @@ a {
     }
 
     .footer__contact-mobile {
-        margin-top: 133%;
+        margin-top: 140%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 116%;
-        margin-right: -5%;
+        width: 150%;
+        margin-right: -15%;
     }
 }
