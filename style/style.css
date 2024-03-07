@@ -21,7 +21,7 @@ body {
     line-height: 1.6rem;
     font-family: "yekan";
     background-color: #f6f6f6;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* Container */
@@ -781,7 +781,7 @@ a {
 
 @media(min-width:220px) {
     .container {
-        width: 21rem;
+        width: 65%;
     }
 }
 
@@ -880,7 +880,7 @@ a {
         right: -256rem;
         border-radius: 2rem;
         transition: all 0.7s ease;
-
+        z-index: 2;
     }
 
     .header__menu-item-mobile,
@@ -1143,6 +1143,10 @@ a {
     .main__services-img {
         width: 61rem;
         height: 33rem;
+    }
+    .head-mason{
+        top: -14%;
+        right: 35.7%;
     }
 }
 
