@@ -781,7 +781,7 @@ a {
 
 @media(min-width:220px) {
     .container {
-        width: 21rem;
+        width: 65%;
     }
 }
 
@@ -875,12 +875,12 @@ a {
         position: absolute;
         height: 100vh;
         background-color: #fff;
-        width: 30vw;
+        width: 40vw;
         top: 0;
         right: -256rem;
         border-radius: 2rem;
         transition: all 0.7s ease;
-
+        z-index: 2;
     }
 
     .header__menu-item-mobile,
