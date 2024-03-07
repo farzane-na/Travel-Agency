@@ -1,3 +1,4 @@
+// variables
 const $ = document;
 const questions = $.querySelectorAll(".question__text");
 const headerOPtion = $.querySelectorAll(".header__option-buttom");
@@ -16,6 +17,8 @@ const openMobileMenu=$.querySelector(".header__mobile-icon");
 const menuMobileItem=$.querySelector(".header__menu-mobile");
 const closeMobilemenu=$.querySelector(".close-mobile-menu");
 let number = 0;
+
+// functions 
 
 // These two functions are for increasing and decreasing the number of passengers
 function minusnumberOfPassangers() {
@@ -58,6 +61,7 @@ function questionHandeler(event) {
 function showMobileMenuItem(){
     menuMobileItem.style.right=0;
 }
+// Events 
 headerOPtion.forEach(function (btn) {
     btn.addEventListener("click", headerOptionHandeler);
 })
