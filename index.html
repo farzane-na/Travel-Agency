@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/kamadatepicker.min.css">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/responsive.css">
     <title>گودگشت</title>
 </head>
 
 <body>
-    <!-- header  -->
     <header class="header">
         <div class="container">
             <div class="header__item d-flex">
@@ -52,14 +51,14 @@
                     <a href="#" class="support__mobile"><img src="./images/question-mark.png" alt=""></a>
                     <a class="header__support d-flex" href="#">
                         <span class="support-icon">
-                            <img src="./images/icons/Ellipse 1.png" alt="" class="ellipse">
-                            <img src="./images/icons/Layer 2.png" alt="" class="layer">
+                            <img src="./images/icons/Ellipse 1.png" class="ellipse">
+                            <img src="./images/icons/Layer 2.png" class="layer">
                         </span>
                         <span>پشتیبانی آنلاین</span>
                     </a>
                     <a class="header__singup d-flex" href="#">
                         <span>
-                            <img src="./images/icons/login-svgrepo-com.png" alt="" class="login">
+                            <img src="./images/icons/login-svgrepo-com.png" class="login">
                         </span>
                         <span>ورود / ثبت نام</span>
                     </a>
@@ -68,14 +67,27 @@
 
             <div class="header__inputs d-flex">
                 <div class="origin-destination-box d-flex">
-                    <input type="text" placeholder="مبدا" class="origin-box">
+                    <select class="origin-box">
+                        <option value="origin" selected>مبدا</option>
+                        <option value="tehran">تهران</option>
+                        <option value="arak">اراک</option>
+                        <option value="tabriz">تبریز</option>
+                        <option value="mashhad">مشهد</option>
+                        <option value="shiraz">شیراز</option>
+                    </select>
                     <button class="change-button"><img src="./images/chang-btn.png"></button>
-                    <input type="text" placeholder="مقصد" class="destination-box">
+                    <select class="destination-box">
+                        <option value="origin" selected>مقصد</option>
+                        <option value="tehran">تهران</option>
+                        <option value="arak">اراک</option>
+                        <option value="tabriz">تبریز</option>
+                        <option value="mashhad">مشهد</option>
+                        <option value="shiraz">شیراز</option>
+                    </select>
                 </div>
                 <div class="return-date ">
-                    <input type="text" placeholder="تاریخ رفت" class="go-date">
-                    <span class="date-buttom"><img src="./images/datebtn.png"></span>
-                    <input type="text" placeholder="تاریخ برگشت" class="back-date">
+                    <input type="text" class="go-date" id="calender1">
+                    <input type="text" class="back-date" id="calender2">
                 </div>
                 <div class="number-passanger d-flex">
                     <span class="number-passanger-title">تعداد مسافران</span>
@@ -189,7 +201,7 @@
             </div>
         </div>
     </header>
-    <!-- main  -->
+
     <main class="main">
         <img src="./images/shape/1x/Shape 11.png" alt="" class="services__shape">
         <div class="container">
@@ -223,14 +235,15 @@
                         <div class="main__app-title">اپلیکیشن گودگشت</div>
                         <div class="main__app-text">توضیحات اپلیکیشن توضیحات اپلیکیشن توضیحات اپلیکیشن توضیحات اپلیکیشن
                             توضیحات اپلیکیشن توضیحات اپلیکیشن</div>
-                            <div class="left-detail-mobile d-flex">
-                                <button class="left-detail-mobile-btn">اطلاعات بیشتر و دانلود
-                                    <span><img src="./images/download.png" alt=""></span>
-                                </button>
-                            </div>
+                        <div class="left-detail-mobile d-flex">
+                            <button class="left-detail-mobile-btn">اطلاعات بیشتر و دانلود
+                                <span><img src="./images/download.png" alt=""></span>
+                            </button>
+                        </div>
                     </div>
                     <div class="main__app-image">
-                        <img src="./images/app.png" alt="application">
+                        <img src="./images/app.png" alt="application" class="main__app-image-windows">
+                        <img src="./images/app-650.png" alt="application" class="main__app-image-mobile">
                     </div>
                     <div class="main__app-feature">
                         <p>- ویژگی های اپلیکیشن گودگشت</p>
@@ -373,7 +386,7 @@
             </div>
         </section>
     </main>
-    <!-- footer  -->
+
     <footer class="footer">
         <div class="container">
             <img src="./images/0-img/world.png" alt="world" class="footer_world">
@@ -421,11 +434,13 @@
                 <div class="footer__logos d-flex">
                     <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/aira-682b7c43.png" alt="aira">
                     </div>
-                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/ecunion-8b792f56.png" alt="ecunion">
+                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/ecunion-8b792f56.png"
+                            alt="ecunion">
                     </div>
                     <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/passenger-rights-dd64d114.svg"
                             alt="passanger"></div>
-                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/samandehi-6e2b448a.png" alt="samandehi">
+                    <div class="footer__logo-icon d-flex"><img src="./images/0-img/logos/samandehi-6e2b448a.png"
+                            alt="samandehi">
                     </div>
                     <div class="footer__logo-icon d-flex" id=""><img
                             src="./images/0-img/logos/state-airline-f45c55b2.svg" alt=""></div>
@@ -433,7 +448,8 @@
             </div>
             <div class="footer__contact-mobile d-flex">
                 <div class="footer__phone-number-mobile d-flex">
-                    <span class="footer__phone-number-mobile-icon"><img src="./images/phone-icon.png" alt="phone"></span>
+                    <span class="footer__phone-number-mobile-icon"><img src="./images/phone-icon.png"
+                            alt="phone"></span>
                     <span class="phone-number-title">شماره تماس : </span>
                     <span class="phone-number">09031234567</span>
                 </div>
@@ -457,8 +473,10 @@
             </section>
         </div>
     </footer>
-    <!-- script  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/kamadatepicker.min.js"></script>
+    <script src="./scripts/custom.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
