@@ -1,24 +1,20 @@
-// variables
-const $ = document;
-const questions = $.querySelectorAll(".question__text");
-const headerOPtion = $.querySelectorAll(".header__option-buttom");
-const wayOptionBtn = $.querySelector(".option-way-icon");
-const wayOptions = $.querySelector(".way-options");
-const way = $.querySelector(".way-option");
-const oneWayOption = $.querySelector(".one-way");
-const twoWayOption = $.querySelector(".two-way");
-const numberPassanger = $.querySelector(".number");
-const minusBtn = $.querySelector(".minus");
-const plusBtn = $.querySelector(".plus");
-const originBox = $.querySelector(".origin-box");
-const destinationBox = $.querySelector(".destination-box");
-const changeBtn = $.querySelector(".change-button");
-const openMobileMenu=$.querySelector(".header__mobile-icon");
-const menuMobileItem=$.querySelector(".header__menu-mobile");
-const closeMobilemenu=$.querySelector(".close-mobile-menu");
+const questions = document.querySelectorAll(".question__text");
+const headerOPtion = document.querySelectorAll(".header__option-buttom");
+const wayOptionBtn = document.querySelector(".option-way-icon");
+const wayOptions = document.querySelector(".way-options");
+const way = document.querySelector(".way-option");
+const oneWayOption = document.querySelector(".one-way");
+const twoWayOption = document.querySelector(".two-way");
+const numberPassanger = document.querySelector(".number");
+const minusBtn = document.querySelector(".minus");
+const plusBtn = document.querySelector(".plus");
+const originBox = document.querySelector(".origin-box");
+const destinationBox = document.querySelector(".destination-box");
+const changeBtn = document.querySelector(".change-button");
+const openMobileMenu = document.querySelector(".header__mobile-icon");
+const menuMobileItem = document.querySelector(".header__menu-mobile");
+const closeMobilemenu = document.querySelector(".close-mobile-menu");
 let number = 0;
-
-// functions 
 
 // These two functions are for increasing and decreasing the number of passengers
 function minusnumberOfPassangers() {
@@ -58,10 +54,9 @@ function questionHandeler(event) {
     questionMark.classList.add("select-question");
 }
 //Show menu items in mobile mode
-function showMobileMenuItem(){
-    menuMobileItem.style.right=0;
+function showMobileMenuItem() {
+    menuMobileItem.style.right = 0;
 }
-// Events 
 headerOPtion.forEach(function (btn) {
     btn.addEventListener("click", headerOptionHandeler);
 })
@@ -76,9 +71,9 @@ twoWayOption.addEventListener("click", setWayOption);
 minusBtn.addEventListener("click", minusnumberOfPassangers);
 plusBtn.addEventListener("click", plusnumberOfPassangers);
 changeBtn.addEventListener("click", changeOriginDestination);
-openMobileMenu.addEventListener("click",showMobileMenuItem);
-closeMobilemenu.addEventListener("click",function(){
-    menuMobileItem.style.right="-256rem";
+openMobileMenu.addEventListener("click", showMobileMenuItem);
+closeMobilemenu.addEventListener("click", function () {
+    menuMobileItem.style.right = "-256rem";
 })
 
 //Use of the library Swiper
@@ -87,23 +82,23 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     spaceBetween: 30,
     pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
+        el: ".swiper-pagination",
+        type: "fraction",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+});
 
-  var appendNumber = 4;
-  var prependNumber = 1;
-  document
+var appendNumber = 4;
+var prependNumber = 1;
+document
     .querySelector(".prepend-2-slides")
     .addEventListener("click", function (e) {
-      e.preventDefault();
-      swiper.prependSlide([
-        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-        '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      ]);
+        e.preventDefault();
+        swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        ]);
     });
