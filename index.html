@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/kamadatepicker.min.css">
+    <link rel="stylesheet" href="./style/number.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>گودگشت</title>
 </head>
@@ -65,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="header__inputs d-flex">
+            <form class="header__inputs d-flex">
                 <div class="origin-destination-box d-flex">
                     <select class="origin-box">
                         <option value="origin" selected>مبدا</option>
@@ -91,22 +92,16 @@
                 </div>
                 <div class="number-passanger d-flex">
                     <span class="number-passanger-title">تعداد مسافران</span>
-                    <span class="plus"><img src="./images/plus.png" alt="plus"></span>
-                    <span class="number">0</span>
-                    <span class="minus"><img src="./images/minus.png" alt="minus"></span>
+                    <input type="number" min="0" max="1000" value="0">
                 </div>
                 <div class="option-way-box d-flex">
-                    <span class="way-option">یک طرفه</span>
-                    <span class="option-way-icon"><img src="./images/way-option.png" alt="way option"></span>
-                    <div class="way-options">
-                        <ul>
-                            <li class="one-way">یک طرفه</li>
-                            <li class="two-way">دو طرفه</li>
-                        </ul>
-                    </div>
+                    <select class="way-option">
+                        <option value="unilateral" selected>یک طرفه</option>
+                        <option value="bilateral">دوطرفه</option>
+                    </select>
                 </div>
-                <button class="search">جستجو</button>
-            </div>
+                <input type="submit" class="search" value="جستوجو">
+            </form>
 
             <div class="header__option">
                 <div class="header__option-buttom first d-flex">
@@ -243,7 +238,7 @@
                     </div>
                     <div class="main__app-image">
                         <img src="./images/app.png" alt="application" class="main__app-image-windows">
-                        <img src="./images/app-650.png" alt="application" class="main__app-image-mobile">
+                        <img src="./images/app-230.png" alt="application" class="main__app-image-mobile">
                     </div>
                     <div class="main__app-feature">
                         <p>- ویژگی های اپلیکیشن گودگشت</p>
