@@ -217,9 +217,15 @@ a {
     gap: 0.5rem;
 }
 
-.number-passanger-title,
-.number {
+.number-passanger-title {
     color: #cfcfcf;
+    width: 8rem !important;
+}
+
+.plus,
+.minus,
+.option-way-icon {
+    cursor: pointer;
 }
 
 .option-way-box {
@@ -233,17 +239,10 @@ a {
 
 .way-option {
     color: #cfcfcf;
-}
-
-.way-options {
-    background-color: #fff;
-    padding: 1rem;
-    position: absolute;
-    border-radius: 1.5rem;
-    top: 3rem;
-    width: 9rem;
-    text-align: center;
-    display: none;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: "yekan";
 }
 
 .one-way {
@@ -259,6 +258,7 @@ a {
     font-family: "yekan";
     border-radius: 1.2rem;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .header__option {
@@ -455,6 +455,10 @@ a {
 .left-detail {
     width: 100%;
     justify-content: center;
+}
+
+.left-detail button {
+    cursor: pointer;
 }
 
 .main__app-feature button {
@@ -1039,7 +1043,7 @@ a {
 
     .main__app-image {
         right: 58%;
-        top: 29.5%;
+        top: 25.5%;
     }
 
     .bankroll__shape {
@@ -1184,6 +1188,11 @@ a {
         right: 35.7%;
     }
 
+    .main__app-image {
+        top: 29.5%;
+        right: 60%;
+    }
+
     .main__app-image-windows {
         display: none;
     }
@@ -1191,7 +1200,6 @@ a {
     .main__app-image-mobile {
         display: block;
         position: absolute;
-
     }
 }
 
@@ -1334,7 +1342,7 @@ a {
     }
 
     .main__app-image {
-        top: 27%;
+        top: 27.8%;
         right: 59%;
     }
 
